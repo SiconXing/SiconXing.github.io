@@ -1,0 +1,161 @@
+# ============================================================
+# Chirpy Theme Configuration
+# ============================================================
+
+theme: jekyll-theme-chirpy
+
+# Site language
+lang: zh-CN
+
+# Timezone
+timezone: Asia/Shanghai
+
+# Site title and description
+title: Scion's Blog
+tagline: 技术·思考·分享
+description: >-
+  一个关于编程、技术和学习笔记的个人博客。
+
+# Site URL (used by sitemap, feed, etc.)
+url: "https://siconxing.github.io"
+
+# GitHub info
+github:
+  username: SiconXing
+
+# Social links
+social:
+  name: Scion
+  email: ""
+  links:
+    - https://github.com/SiconXing
+
+# Theme mode (light, dark, auto)
+# auto: follows system preference
+theme_mode: auto
+
+# Avatar (place your avatar in assets/img/avatars/)
+avatar: assets/img/avatars/avatar.png
+
+# Table of Contents in posts
+toc: true
+
+# Comments
+comments:
+  active: giscus
+  giscus:
+    repo: SiconXing/SiconXing.github.io
+    repo_id: ""
+    category: Announcements
+    category_id: ""
+    mapping: pathname
+    strict: 0
+    input_position: bottom
+    lang: zh-CN
+    reactions_enabled: 1
+
+# ============================================================
+# Analytics (optional)
+# ============================================================
+# google_analytics:
+#   id: "G-XXXXXXXXXX"
+
+# ============================================================
+# Page settings
+# ============================================================
+# Number of posts displayed on home page
+pagination:
+  enabled: true
+  per_page: 5
+  permalink: "page/:num/"
+  title_suffix: " - 第 :num 页"
+
+# Date format
+date_format: "%Y-%m-%d"
+
+# ============================================================
+# Build settings
+# ============================================================
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    css_class: highlight
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      comments: true
+      toc: true
+      math: false
+  - scope:
+      path: "_drafts"
+    values:
+      comments: false
+  - scope:
+      path: ""
+      type: tabs
+    values:
+      layout: page
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
+
+# Files to exclude
+exclude:
+  - "*.gem"
+  - "*.gemspec"
+  - "*.yml"
+  - tools
+  - README.md
+  - LICENSE
+  - rollup.config.js
+  - package.json
+  - package-lock.json
+  - node_modules
+  - vendor
+  - tmp
+  - Gemfile.lock
+
+# Files to keep
+include:
+  - _pages
+  - _redirects
+
+# Collections
+collections:
+  tabs:
+    output: true
+    sort_by: order
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+
+# Jekyll Archives
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/

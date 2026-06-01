@@ -1,0 +1,26 @@
+# Contact links for the sidebar/about page
+# Comment out lines with '#' to hide them
+
+- type: github
+  icon: "fab fa-github"
+  url: "https://github.com/SiconXing"
+
+- type: email
+  icon: "fas fa-envelope"
+  noblank: true
+
+# - type: twitter
+#   icon: "fa-brands fa-x-twitter"
+#   url: ""
+
+# - type: linkedin
+#   icon: "fab fa-linkedin"
+#   url: ""
+
+# - type: rss
+#   icon: "fas fa-rss"
+#   noblank: true
+
+# - type: stack-overflow
+#   icon: "fab fa-stack-overflow"
+#   url: ""
