@@ -26,7 +26,7 @@ github:
 # Social links
 social:
   name: Scion
-  email: ""
+  email: "885112006@qq.com"
   links:
     - https://github.com/SiconXing
 
@@ -45,9 +45,9 @@ comments:
   active: giscus
   giscus:
     repo: SiconXing/SiconXing.github.io
-    repo_id: ""
+    repo_id: "R_kgDOStwZ_w"
     category: Announcements
-    category_id: ""
+    category_id: "DIC_kwDOStwZ_84C-VvY"
     mapping: pathname
     strict: 0
     input_position: bottom
