@@ -64,6 +64,8 @@ comments:
 # Page settings
 # ============================================================
 # Number of posts displayed on home page
+paginate: 5
+paginate_path: "page/:num/"
 pagination:
   enabled: true
   per_page: 5

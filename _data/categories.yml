@@ -1,0 +1,30 @@
+# Category cards for homepage navigation
+- name: Python
+  icon: fab fa-python
+  slug: python
+  color: "#3776AB"
+  description: Python 技巧与实践
+
+- name: Go
+  icon: fas fa-code
+  slug: go
+  color: "#00ADD8"
+  description: Go 并发与后端开发
+
+- name: DevOps
+  icon: fas fa-server
+  slug: devops
+  color: "#E95420"
+  description: Docker / K8s / CI/CD
+
+- name: Linux
+  icon: fab fa-linux
+  slug: linux
+  color: "#FCC624"
+  description: Linux 与命令行
+
+- name: 工具
+  icon: fas fa-tools
+  slug: 工具
+  color: "#6C757D"
+  description: Git / VSCode / 效率工具

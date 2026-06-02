@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400">
+  <!-- Night sky gradient background -->
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="60%" style="stop-color:#16213e"/>
+      <stop offset="100%" style="stop-color:#0f3460"/>
+    </linearGradient>
+    <radialGradient id="moon" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#fffde7"/>
+      <stop offset="100%" style="stop-color:#fff9c4"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="1200" height="400" fill="url(#sky)"/>
+
+  <!-- Stars -->
+  <circle cx="100" cy="50" r="1.5" fill="white" opacity="0.8"/>
+  <circle cx="250" cy="30" r="1" fill="white" opacity="0.6"/>
+  <circle cx="400" cy="80" r="1.5" fill="white" opacity="0.7"/>
+  <circle cx="550" cy="20" r="1" fill="white" opacity="0.5"/>
+  <circle cx="700" cy="60" r="2" fill="white" opacity="0.8"/>
+  <circle cx="850" cy="35" r="1" fill="white" opacity="0.6"/>
+  <circle cx="1000" cy="70" r="1.5" fill="white" opacity="0.7"/>
+  <circle cx="1100" cy="25" r="1" fill="white" opacity="0.5"/>
+  <circle cx="150" cy="100" r="1" fill="white" opacity="0.4"/>
+  <circle cx="650" cy="90" r="1.5" fill="white" opacity="0.5"/>
+  <circle cx="950" cy="100" r="1" fill="white" opacity="0.6"/>
+
+  <!-- Moon -->
+  <circle cx="1050" cy="70" r="35" fill="url(#moon)" opacity="0.9"/>
+
+  <!-- Ground / hills -->
+  <ellipse cx="300" cy="380" rx="350" ry="80" fill="#1a2938"/>
+  <ellipse cx="800" cy="390" rx="400" ry="70" fill="#152230"/>
+  <ellipse cx="600" cy="400" rx="600" ry="60" fill="#111d2b"/>
+
+  <!-- Tree silhouettes -->
+  <!-- Left trees -->
+  <polygon points="80,350 100,220 120,350" fill="#0d1a25" opacity="0.7"/>
+  <polygon points="70,360 95,250 120,360" fill="#0a1520" opacity="0.5"/>
+  <!-- Right trees -->
+  <polygon points="1080,350 1100,240 1120,350" fill="#0d1a25" opacity="0.7"/>
+  <polygon points="1090,360 1110,260 1130,360" fill="#0a1520" opacity="0.5"/>
+
+  <!-- Bear 1 (Grizzly) - sitting on the left, facing right -->
+  <g transform="translate(300, 280)">
+    <!-- Body -->
+    <ellipse cx="0" cy="30" rx="35" ry="40" fill="#8B6914"/>
+    <!-- Head -->
+    <circle cx="15" cy="-15" r="28" fill="#A0782C"/>
+    <!-- Ears -->
+    <circle cx="-5" cy="-38" r="10" fill="#A0782C"/>
+    <circle cx="-5" cy="-38" r="6" fill="#C49A3C"/>
+    <circle cx="30" cy="-38" r="10" fill="#A0782C"/>
+    <circle cx="30" cy="-38" r="6" fill="#C49A3C"/>
+    <!-- Eyes -->
+    <circle cx="8" cy="-18" r="3" fill="#1a1a1a"/>
+    <circle cx="25" cy="-18" r="3" fill="#1a1a1a"/>
+    <!-- Nose -->
+    <ellipse cx="18" cy="-8" rx="5" ry="3.5" fill="#5C3A0A"/>
+    <!-- Mouth -->
+    <path d="M18,-5 Q22,0 26,-5" stroke="#5C3A0A" stroke-width="1.5" fill="none"/>
+    <!-- Arms -->
+    <ellipse cx="-25" cy="20" rx="12" ry="18" fill="#8B6914" transform="rotate(15, -25, 20)"/>
+    <ellipse cx="35" cy="20" rx="12" ry="18" fill="#8B6914" transform="rotate(-15, 35, 20)"/>
+    <!-- Feet -->
+    <ellipse cx="-15" cy="65" rx="15" ry="8" fill="#6B4F10"/>
+    <ellipse cx="25" cy="65" rx="15" ry="8" fill="#6B4F10"/>
+  </g>
+
+  <!-- Bear 2 (Panda) - in the middle -->
+  <g transform="translate(550, 275)">
+    <!-- Body -->
+    <ellipse cx="0" cy="35" rx="38" ry="42" fill="white"/>
+    <!-- Head -->
+    <circle cx="10" cy="-10" r="32" fill="white"/>
+    <!-- Ears -->
+    <circle cx="-18" cy="-35" r="12" fill="#1a1a1a"/>
+    <circle cx="-18" cy="-35" r="6" fill="#333"/>
+    <circle cx="38" cy="-35" r="12" fill="#1a1a1a"/>
+    <circle cx="38" cy="-35" r="6" fill="#333"/>
+    <!-- Eye patches -->
+    <ellipse cx="-2" cy="-15" rx="12" ry="9" fill="#1a1a1a" transform="rotate(-10, -2, -15)"/>
+    <ellipse cx="25" cy="-15" rx="12" ry="9" fill="#1a1a1a" transform="rotate(10, 25, -15)"/>
+    <!-- Eyes -->
+    <circle cx="-1" cy="-14" r="3" fill="white"/>
+    <circle cx="24" cy="-14" r="3" fill="white"/>
+    <circle cx="-1" cy="-14" r="1.5" fill="#1a1a1a"/>
+    <circle cx="24" cy="-14" r="1.5" fill="#1a1a1a"/>
+    <!-- Nose -->
+    <ellipse cx="12" cy="-3" rx="5" ry="3" fill="#1a1a1a"/>
+    <!-- Mouth -->
+    <path d="M6,1 Q12,5 18,1" stroke="#1a1a1a" stroke-width="1.5" fill="none"/>
+    <!-- Arms -->
+    <ellipse cx="-30" cy="25" rx="13" ry="20" fill="#1a1a1a" transform="rotate(20, -30, 25)"/>
+    <ellipse cx="40" cy="25" rx="13" ry="20" fill="#1a1a1a" transform="rotate(-20, 40, 25)"/>
+    <!-- Legs -->
+    <ellipse cx="-18" cy="72" rx="14" ry="10" fill="#1a1a1a"/>
+    <ellipse cx="28" cy="72" rx="14" ry="10" fill="#1a1a1a"/>
+  </g>
+
+  <!-- Bear 3 (Ice Bear / Polar) - on the right -->
+  <g transform="translate(800, 280)">
+    <!-- Body -->
+    <ellipse cx="0" cy="32" rx="33" ry="38" fill="#F5F5F0"/>
+    <!-- Head -->
+    <circle cx="0" cy="-12" r="27" fill="#FAFAF5"/>
+    <!-- Ears -->
+    <circle cx="-20" cy="-34" r="9" fill="#F5F5F0"/>
+    <circle cx="-20" cy="-34" r="5" fill="#E8E8E0"/>
+    <circle cx="20" cy="-34" r="9" fill="#F5F5F0"/>
+    <circle cx="20" cy="-34" r="5" fill="#E8E8E0"/>
+    <!-- Eyes -->
+    <circle cx="-8" cy="-15" r="2.5" fill="#1a1a1a"/>
+    <circle cx="8" cy="-15" r="2.5" fill="#1a1a1a"/>
+    <!-- Nose -->
+    <ellipse cx="0" cy="-6" rx="4" ry="3" fill="#333"/>
+    <!-- Mouth -->
+    <path d="M-5,-3 Q0,2 5,-3" stroke="#333" stroke-width="1.2" fill="none"/>
+    <!-- Arms - holding an axe pose -->
+    <ellipse cx="-22" cy="22" rx="11" ry="17" fill="#F5F5F0" transform="rotate(15, -22, 22)"/>
+    <ellipse cx="22" cy="22" rx="11" ry="17" fill="#F5F5F0" transform="rotate(-15, 22, 22)"/>
+    <!-- Feet -->
+    <ellipse cx="-12" cy="65" rx="14" ry="7" fill="#E8E8E0"/>
+    <ellipse cx="12" cy="65" rx="14" ry="7" fill="#E8E8E0"/>
+  </g>
+
+  <!-- Small text/branding at bottom -->
+  <text x="600" y="380" font-family="sans-serif" font-size="14" fill="white" opacity="0.3" text-anchor="middle">We Bare Bears</text>
+</svg>
