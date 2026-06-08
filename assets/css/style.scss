@@ -230,96 +230,6 @@ code.highlighter-rouge {
 }
 
 /* ============================================================
-   Category Cards
-   ============================================================ */
-
-.category-cards-section {
-  margin-bottom: 2.5rem;
-}
-
-.category-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1rem;
-}
-
-.category-card {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 1.2rem;
-  border-radius: 12px;
-  border: 1px solid var(--border-color);
-  background: var(--card-bg);
-  transition: all 0.3s ease;
-  text-decoration: none !important;
-  position: relative;
-  overflow: hidden;
-}
-
-.category-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 4px;
-  height: 100%;
-  background: var(--card-color, #3b82f6);
-  border-radius: 4px 0 0 4px;
-}
-
-.category-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-  border-color: var(--card-color, #3b82f6);
-}
-
-.category-card-icon {
-  width: 42px;
-  height: 42px;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.4rem;
-  color: white;
-  background: var(--card-color, #3b82f6);
-  flex-shrink: 0;
-}
-
-.category-card-body {
-  flex: 1;
-  min-width: 0;
-}
-
-.category-card-title {
-  font-size: 1rem;
-  font-weight: 600;
-  margin: 0 0 0.2rem 0;
-  color: var(--heading-color);
-}
-
-.category-card-desc {
-  font-size: 0.8rem;
-  color: var(--text-muted-color);
-  margin: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.category-card-arrow {
-  color: var(--text-muted-color);
-  font-size: 0.8rem;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.category-card:hover .category-card-arrow {
-  opacity: 1;
-}
-
-/* ============================================================
    Pinned Posts Section
    ============================================================ */
 
@@ -426,17 +336,7 @@ code.highlighter-rouge {
     font-size: 0.8rem;
   }
 
-  .category-cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .pinned-posts {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 480px) {
-  .category-cards {
     grid-template-columns: 1fr;
   }
 }

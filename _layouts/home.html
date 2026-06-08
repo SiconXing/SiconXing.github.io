@@ -1,8 +1,5 @@
 ---
 layout: default
-panel_includes:
-  - trending-tags
-  - update-list
 ---
 
 {% include lang.html %}
@@ -63,32 +60,6 @@ panel_includes:
     </div>
   </div>
 </section>
-
-<!-- ============================================================
-     Category Cards (only on first page)
-     ============================================================ -->
-
-{% if site.data.categories %}
-<section class="category-cards-section">
-  <h2 class="section-title">📂 技术分类</h2>
-  <div class="category-cards">
-    {% for cat in site.data.categories %}
-    <a href="{{ '/categories/' | append: cat.slug | relative_url }}" class="category-card" style="--card-color: {{ cat.color }}">
-      <div class="category-card-icon">
-        <i class="{{ cat.icon }}"></i>
-      </div>
-      <div class="category-card-body">
-        <h3 class="category-card-title">{{ cat.name }}</h3>
-        <p class="category-card-desc">{{ cat.description }}</p>
-      </div>
-      <div class="category-card-arrow">
-        <i class="fas fa-arrow-right"></i>
-      </div>
-    </a>
-    {% endfor %}
-  </div>
-</section>
-{% endif %}
 
 <!-- ============================================================
      Pinned Posts (only on first page)
