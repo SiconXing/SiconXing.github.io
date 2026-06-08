@@ -18,6 +18,13 @@ Gemfile.lock
 .DS_Store
 Thumbs.db
 
+# Env
+.env
+
 # Temp
 tmp/
 *.tmp
+
+# skills
+.claude/
+scripts/
