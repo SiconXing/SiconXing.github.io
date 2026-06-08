@@ -35,7 +35,7 @@ social:
 theme_mode: auto
 
 # Avatar (place your avatar in assets/img/avatars/)
-avatar: assets/img/avatars/avatar.png
+avatar: assets/img/avatars/avatar.svg
 
 # Table of Contents in posts
 toc: true

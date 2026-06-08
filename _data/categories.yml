@@ -23,6 +23,12 @@
   color: "#FCC624"
   description: Linux 与命令行
 
+- name: 技术
+  icon: fas fa-laptop-code
+  slug: 技术
+  color: "#7C3AED"
+  description: 技术教程与开发工具
+
 - name: 工具
   icon: fas fa-tools
   slug: 工具
